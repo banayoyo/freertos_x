@@ -70,6 +70,8 @@
 #ifndef FREERTOS_CONFIG_H
 #define FREERTOS_CONFIG_H
 
+#ifndef SMALL_TEST
+//#define SMALL_TEST
 
 /* Required for configuration-dependent settings. */
 #include "xtensa_config.h"
@@ -137,7 +139,8 @@
 #ifdef SMALL_TEST
 	#define configTOTAL_HEAP_SIZE						( ( size_t ) ( 16 * 1024 ) )
 #else
-	#define configTOTAL_HEAP_SIZE						( ( size_t ) ( 512 * 1024 ) )
+	#define configTOTAL_HEAP_SIZE						( ( size_t ) ( 32 * 1024 ) ) //16 fail
+	//#define configTOTAL_HEAP_SIZE						( ( size_t ) ( 512 * 1024 ) )	//origin
 #endif
 
 #define configMAX_TASK_NAME_LEN							( 8 )
@@ -259,4 +262,5 @@
 
 #define configSTREAM_BUFFER_TRIGGER_LEVEL_TEST_MARGIN	( 2 )	/* Used by stream buffer tests. */
 
+#endif /*SMALL_TEST*/
 #endif /* FREERTOS_CONFIG_H */

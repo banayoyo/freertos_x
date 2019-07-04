@@ -117,6 +117,7 @@ static QueueHandle_t xQueue = NULL;
  */
 static TimerHandle_t xTimer = NULL;
 /*-----------------------------------------------------------*/
+unsigned int createstacksize = 0;
 
 void main_blinky( void )
 {
@@ -136,6 +137,7 @@ const TickType_t xTimerPeriod = mainTIMER_SEND_FREQUENCY_MS;
 					mainQUEUE_RECEIVE_TASK_PRIORITY,/* The priority assigned to the task. */
 					NULL );							/* The task handle is not required, so NULL is passed. */
 
+		createstacksize = configMINIMAL_STACK_SIZE; //1628
 		xTaskCreate( prvQueueSendTask, "TX", configMINIMAL_STACK_SIZE, NULL, mainQUEUE_SEND_TASK_PRIORITY, NULL );
 
 		/* Create the software timer, but don't start it yet. */
@@ -171,7 +173,7 @@ const uint32_t ulValueToSend = mainVALUE_SENT_FROM_TASK;
 
 	/* Prevent the compiler warning about the unused parameter. */
 	( void ) pvParameters;
-    sdcnt++;
+
 	/* Initialise xNextWakeTime - this only needs to be done once. */
 	xNextWakeTime = xTaskGetTickCount();
 
@@ -182,6 +184,7 @@ const uint32_t ulValueToSend = mainVALUE_SENT_FROM_TASK;
 		 * convert a time specified in milliseconds into a time specified in ticks.
 		 * While in the Blocked state this task will not consume any CPU time. */
 		vTaskDelayUntil( &xNextWakeTime, xBlockTime );
+		sdcnt++;
 
 		/* Send to the queue - causing the queue receive task to unblock and
 		 * write to the console.  0 is used as the block time so the send operation
@@ -217,7 +220,7 @@ uint32_t ulReceivedValue;
 
 	/* Prevent the compiler warning about the unused parameter. */
 	( void ) pvParameters;
-    rvcnt++;
+
 	for( ;; )
 	{
 		/* Wait until something arrives in the queue - this task will block
@@ -225,6 +228,7 @@ uint32_t ulReceivedValue;
 		 * FreeRTOSConfig.h.  It will not use any CPU time while it is in the
 		 * Blocked state. */
 		xQueueReceive( xQueue, &ulReceivedValue, portMAX_DELAY );
+		rvcnt++;
 
 		/* To get here something must have been received from the queue, but
 		 * is it an expected value? This is the only task that uses stdout so its

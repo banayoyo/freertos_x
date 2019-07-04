@@ -325,6 +325,8 @@ void vPortInitialiseBlocks( void )
 	/* This just exists to keep the linker quiet. */
 }
 /*-----------------------------------------------------------*/
+unsigned int heapsize = 0;
+unsigned int heapsaddr = 0x0;
 
 static void prvHeapInit( void )
 {
@@ -335,7 +337,8 @@ size_t xTotalHeapSize = configTOTAL_HEAP_SIZE;
 
 	/* Ensure the heap starts on a correctly aligned boundary. */
 	uxAddress = ( size_t ) ucHeap;
-
+	heapsize = sizeof(ucHeap);
+	heapsaddr = ucHeap;
 	if( ( uxAddress & portBYTE_ALIGNMENT_MASK ) != 0 )
 	{
 		uxAddress += ( portBYTE_ALIGNMENT - 1 );

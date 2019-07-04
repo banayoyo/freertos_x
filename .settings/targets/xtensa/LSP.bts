@@ -15,10 +15,20 @@
                 </StringListMapOptions>
             </PreprocessorOptions>
             <CompilerOptions>
+                <SingleFlagMapOptions>
+                    <SingleFlagMapEntry>
+                        <key>UseDspCoprocessor</key>
+                        <value flag="-mcoproc" use="true"/>
+                    </SingleFlagMapEntry>
+                    <SingleFlagMapEntry>
+                        <key>OptimizeSpace</key>
+                        <value flag="-Os" use="true"/>
+                    </SingleFlagMapEntry>
+                </SingleFlagMapOptions>
                 <FlagValueMapOptions>
                     <FlagValueMapEntry>
                         <key>Optimization</key>
-                        <value level="0" flag="-O" use="true"/>
+                        <value level="2" flag="-O" use="true"/>
                     </FlagValueMapEntry>
                     <FlagValueMapEntry>
                         <key>Debug</key>
@@ -45,7 +55,7 @@
                         <value selected="true"/>
                     </BooleanMapEntry>
                 </BooleanMapOptions>
-                <LinkerSupport custom="true" key="-mlsp=" value="C:\xtensa\XtDevTools\install\builds\RI-2018.0-win32\hifi5_lite_v5_0_fpga\xtensa-elf\lib\gdbio_big"/>
+                <LinkerSupport custom="true" key="-mlsp=" value="D:\xtensa\XtDevTools\install\builds\RI-2018.0-win32\hifi5_lite_v5_0_fpga\xtensa-elf\lib\gdbio_big"/>
             </LinkerOptions>
         </BaseSettings>
     </BuildSettings>
