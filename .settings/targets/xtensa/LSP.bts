@@ -45,6 +45,7 @@
                         <value selected="true"/>
                     </BooleanMapEntry>
                 </BooleanMapOptions>
+                <LinkerSupport custom="true" key="-mlsp=" value="C:\xtensa\XtDevTools\install\builds\RI-2018.0-win32\hifi5_lite_v5_0_fpga\xtensa-elf\lib\gdbio_big"/>
             </LinkerOptions>
         </BaseSettings>
     </BuildSettings>

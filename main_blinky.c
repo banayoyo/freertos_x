@@ -162,7 +162,7 @@ const TickType_t xTimerPeriod = mainTIMER_SEND_FREQUENCY_MS;
 	for( ;; );
 }
 /*-----------------------------------------------------------*/
-
+unsigned int sdcnt = 0;
 static void prvQueueSendTask( void *pvParameters )
 {
 TickType_t xNextWakeTime;
@@ -171,7 +171,7 @@ const uint32_t ulValueToSend = mainVALUE_SENT_FROM_TASK;
 
 	/* Prevent the compiler warning about the unused parameter. */
 	( void ) pvParameters;
-
+    sdcnt++;
 	/* Initialise xNextWakeTime - this only needs to be done once. */
 	xNextWakeTime = xTaskGetTickCount();
 
@@ -210,14 +210,14 @@ const uint32_t ulValueToSend = mainVALUE_SENT_FROM_TIMER;
 	xQueueSend( xQueue, &ulValueToSend, 0U );
 }
 /*-----------------------------------------------------------*/
-
+unsigned int rvcnt = 0;
 static void prvQueueReceiveTask( void *pvParameters )
 {
 uint32_t ulReceivedValue;
 
 	/* Prevent the compiler warning about the unused parameter. */
 	( void ) pvParameters;
-
+    rvcnt++;
 	for( ;; )
 	{
 		/* Wait until something arrives in the queue - this task will block

@@ -62,7 +62,7 @@
  * and demo application will be built. The comprehensive test and demo application
  * is implemented and described in main_full.c.
  */
-#define mainCREATE_SIMPLE_BLINKY_DEMO_ONLY	0
+#define mainCREATE_SIMPLE_BLINKY_DEMO_ONLY	1
 /*-----------------------------------------------------------*/
 
 /**

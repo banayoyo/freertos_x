@@ -17,7 +17,7 @@
 							</builder>
 							<tool errorParsers="org.eclipse.cdt.core.VCErrorParser;org.eclipse.cdt.core.GASErrorParser" id="org.eclipse.cdt.build.core.settings.holder.libs.348706967" name="holder for library settings" superClass="org.eclipse.cdt.build.core.settings.holder.libs"/>
 							<tool errorParsers="org.eclipse.cdt.core.VCErrorParser;org.eclipse.cdt.core.GASErrorParser" id="org.eclipse.cdt.build.core.settings.holder.967488804" name="Assembly" superClass="org.eclipse.cdt.build.core.settings.holder">
-								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.732499756" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.732499756" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
 									<listOptionValue builtIn="false" value="C:/xtensa/XtDevTools/install/builds/RI-2018.0-win32/hifi5_lite_v5_0_fpga/xtensa-elf/arch/include"/>
 									<listOptionValue builtIn="false" value="C:/xtensa/XtDevTools/install/builds/RI-2018.0-win32/hifi5_lite_v5_0_fpga/xtensa-elf/include"/>
 									<listOptionValue builtIn="false" value="C:/xtensa/XtDevTools/install/tools/RI-2018.0-win32/XtensaTools/lib/xcc/include"/>
@@ -32,7 +32,7 @@
 									<listOptionValue builtIn="false" value="&quot;C:\Users\admin\Desktop\HIFI_Candence\RTOS\workspace\RTOSDemo\FreeRTOS_Source\portable\XCC&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\Users\admin\Desktop\HIFI_Candence\RTOS\workspace\RTOSDemo&quot;"/>
 								</option>
-								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.1128454107" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
+								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.1128454107" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__LONG_LONG_MAX__=9223372036854775807LL"/>
 									<listOptionValue builtIn="false" value="__PTRDIFF_TYPE__=int"/>
 									<listOptionValue builtIn="false" value="__WCHAR_MAX__=65535U"/>
@@ -73,7 +73,7 @@
 								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1450253705" languageId="org.eclipse.cdt.core.assembly" languageName="Assembly" sourceContentType="org.eclipse.cdt.core.asmSource" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 							</tool>
 							<tool errorParsers="org.eclipse.cdt.core.VCErrorParser;org.eclipse.cdt.core.GASErrorParser" id="org.eclipse.cdt.build.core.settings.holder.510992276" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder">
-								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.108098367" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.108098367" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
 									<listOptionValue builtIn="false" value="C:/xtensa/XtDevTools/install/builds/RI-2018.0-win32/hifi5_lite_v5_0_fpga/xtensa-elf/arch/include"/>
 									<listOptionValue builtIn="false" value="C:/xtensa/XtDevTools/install/builds/RI-2018.0-win32/hifi5_lite_v5_0_fpga/xtensa-elf/include"/>
 									<listOptionValue builtIn="false" value="C:/xtensa/XtDevTools/install/tools/RI-2018.0-win32/XtensaTools/lib/xcc/include"/>
@@ -88,7 +88,7 @@
 									<listOptionValue builtIn="false" value="&quot;C:\Users\admin\Desktop\HIFI_Candence\RTOS\workspace\RTOSDemo\FreeRTOS_Source\portable\XCC&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\Users\admin\Desktop\HIFI_Candence\RTOS\workspace\RTOSDemo&quot;"/>
 								</option>
-								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.1416420520" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
+								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.1416420520" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__LONG_LONG_MAX__=9223372036854775807LL"/>
 									<listOptionValue builtIn="false" value="__PTRDIFF_TYPE__=int"/>
 									<listOptionValue builtIn="false" value="__WCHAR_MAX__=65535U"/>
@@ -129,7 +129,7 @@
 								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1006454219" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
 							</tool>
 							<tool errorParsers="org.eclipse.cdt.core.VCErrorParser;org.eclipse.cdt.core.GASErrorParser" id="org.eclipse.cdt.build.core.settings.holder.2050442786" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder">
-								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.1005773550" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.1005773550" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
 									<listOptionValue builtIn="false" value="C:/xtensa/XtDevTools/install/builds/RI-2018.0-win32/hifi5_lite_v5_0_fpga/xtensa-elf/arch/include"/>
 									<listOptionValue builtIn="false" value="C:/xtensa/XtDevTools/install/builds/RI-2018.0-win32/hifi5_lite_v5_0_fpga/xtensa-elf/include"/>
 									<listOptionValue builtIn="false" value="C:/xtensa/XtDevTools/install/tools/RI-2018.0-win32/XtensaTools/lib/xcc/include"/>
@@ -144,7 +144,7 @@
 									<listOptionValue builtIn="false" value="&quot;C:\Users\admin\Desktop\HIFI_Candence\RTOS\workspace\RTOSDemo\FreeRTOS_Source\portable\XCC&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\Users\admin\Desktop\HIFI_Candence\RTOS\workspace\RTOSDemo&quot;"/>
 								</option>
-								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.2060678356" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
+								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.2060678356" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__LONG_LONG_MAX__=9223372036854775807LL"/>
 									<listOptionValue builtIn="false" value="__PTRDIFF_TYPE__=int"/>
 									<listOptionValue builtIn="false" value="__WCHAR_MAX__=65535U"/>
