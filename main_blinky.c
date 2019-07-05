@@ -167,9 +167,9 @@ const TickType_t xTimerPeriod = mainTIMER_SEND_FREQUENCY_MS;
 unsigned int sdcnt = 0;
 static void prvQueueSendTask( void *pvParameters )
 {
-TickType_t xNextWakeTime;
-const TickType_t xBlockTime = mainTASK_SEND_FREQUENCY_MS;
-const uint32_t ulValueToSend = mainVALUE_SENT_FROM_TASK;
+    TickType_t xNextWakeTime;
+    const TickType_t xBlockTime = mainTASK_SEND_FREQUENCY_MS;
+    const uint32_t ulValueToSend = mainVALUE_SENT_FROM_TASK;
 
 	/* Prevent the compiler warning about the unused parameter. */
 	( void ) pvParameters;
@@ -197,7 +197,7 @@ const uint32_t ulValueToSend = mainVALUE_SENT_FROM_TASK;
 
 static void prvQueueSendTimerCallback( TimerHandle_t xTimerHandle )
 {
-const uint32_t ulValueToSend = mainVALUE_SENT_FROM_TIMER;
+    const uint32_t ulValueToSend = mainVALUE_SENT_FROM_TIMER;
 
 	/* This is the software timer callback function.  The software timer has a
 	 * period of two seconds and is reset each time a key is pressed.  This
@@ -216,7 +216,7 @@ const uint32_t ulValueToSend = mainVALUE_SENT_FROM_TIMER;
 unsigned int rvcnt = 0;
 static void prvQueueReceiveTask( void *pvParameters )
 {
-uint32_t ulReceivedValue;
+    uint32_t ulReceivedValue;
 
 	/* Prevent the compiler warning about the unused parameter. */
 	( void ) pvParameters;
